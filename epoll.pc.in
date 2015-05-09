@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=${prefix}/include
+
+Name: cygepoll
+Description: Cygwin epoll
+Version: @VERSION@
+Libs: -L${libdir} -lepoll
+Cflags: -I${includedir}
+Requires: upoll
